@@ -39,8 +39,9 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.fetchLaunches()
         viewModel.launches.observe(this, Observer { launches ->
-            launchAdapter.setLaunches(launches)
-            launchAdapter.notifyDataSetChanged()
+            launchAdapter.submitList(launches)
+           /* launchAdapter.setLaunches(launches)
+            launchAdapter.notifyDataSetChanged()*/
         })
     }
 

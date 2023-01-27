@@ -23,6 +23,7 @@ class ViewModelLaunch @Inject constructor(private val repository: LaunchReposito
                     _launches.value = launches
                 } catch (e: Exception) {
                     // handle error
+
                 }
             }
         }
