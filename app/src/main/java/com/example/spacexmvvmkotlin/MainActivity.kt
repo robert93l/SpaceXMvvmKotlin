@@ -2,6 +2,7 @@ package com.example.spacexmvvmkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         setUpRecyclerView()
         setUpViewModel()
-
+        refreshswipe()
 
     }
 
@@ -36,13 +37,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpViewModel() {
 
-        val repository = LaunchRepository(spaceXRetrofit)
-
         viewModel.fetchLaunches()
         viewModel.launches.observe(this, Observer { launches ->
             launchAdapter.setLaunches(launches)
             launchAdapter.notifyDataSetChanged()
         })
+    }
+
+    private fun refreshswipe() {
+        binding.swipespace.setOnRefreshListener {
+            setUpRecyclerView()
+            setUpViewModel()
+            binding.swipespace.isRefreshing = false
+        }
     }
 }
 
