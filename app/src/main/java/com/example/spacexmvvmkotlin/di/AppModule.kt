@@ -1,5 +1,7 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.di
 
+import com.example.spacexmvvmkotlin.utils.Constants
+import com.example.spacexmvvmkotlin.api.SpaceXApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

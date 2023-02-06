@@ -1,14 +1,12 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.spacexmvvmkotlin.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
-import retrofit2.Retrofit
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

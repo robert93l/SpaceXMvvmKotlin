@@ -1,9 +1,11 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.spacexmvvmkotlin.data.Launch
+import com.example.spacexmvvmkotlin.repository.LaunchRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

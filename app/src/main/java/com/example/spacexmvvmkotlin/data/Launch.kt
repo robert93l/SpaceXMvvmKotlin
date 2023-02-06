@@ -1,4 +1,4 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.data
 
 data class Launch (
     val mission_name: String,

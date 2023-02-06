@@ -1,4 +1,4 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.utils
 
 object Constants {
 

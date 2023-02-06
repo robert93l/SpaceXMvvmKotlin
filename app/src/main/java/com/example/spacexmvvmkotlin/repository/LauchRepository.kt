@@ -1,5 +1,7 @@
-package com.example.spacexmvvmkotlin
+package com.example.spacexmvvmkotlin.repository
 
+import com.example.spacexmvvmkotlin.api.SpaceXApi
+import com.example.spacexmvvmkotlin.data.Launch
 import javax.inject.Inject
 
 
