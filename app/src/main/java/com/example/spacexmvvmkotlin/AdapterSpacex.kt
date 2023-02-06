@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 class AdapterSpacex : RecyclerView.Adapter<AdapterSpacex.LaunchViewHolder>()
  {
-
-   /* private var launches: List<Launch> = emptyList()*/
    private val launches = mutableListOf<Launch>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaunchViewHolder {
@@ -27,9 +25,6 @@ class AdapterSpacex : RecyclerView.Adapter<AdapterSpacex.LaunchViewHolder>()
 
     }
 
-   /* fun setLaunches(launches: List<Launch>) {
-        this.launches = launches
-    }*/
    fun submitList(launches1: List<Launch>) {
        launches.clear()
        launches.addAll(launches1)
@@ -50,5 +45,4 @@ class AdapterSpacex : RecyclerView.Adapter<AdapterSpacex.LaunchViewHolder>()
             Glide.with(imageView.context).load(launch.links.mission_patch_small).into(imageView)
         }
     }
-
 }
