@@ -38,6 +38,7 @@ class AdapterSpacex : RecyclerView.Adapter<AdapterSpacex.LaunchViewHolder>()
         private val lauchdate: TextView = itemView.findViewById(R.id.launch_date)
         private val imageView: ImageView = itemView.findViewById(R.id.mission_patch)
 
+
         fun bind(launch: Launch) {
             missionName.text = launch.mission_name
             rocketName.text = launch.rocket.rocket_name
