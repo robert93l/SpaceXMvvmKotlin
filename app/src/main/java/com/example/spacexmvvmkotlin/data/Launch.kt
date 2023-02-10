@@ -7,10 +7,14 @@ data class Launch (
     val links: Link,
 )
 
-
 data class Rocket (
     val rocket_name: String
 )
 data class Link(
     val mission_patch_small: String
 )
+
+
+
+
+

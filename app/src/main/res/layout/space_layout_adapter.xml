@@ -60,26 +60,5 @@
 
 
 </LinearLayout>
-
-      <!--  <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_toEndOf="@id/inforlayout"
-            android:layout_alignBottom="@id/inforlayout">
-
-            <TextView
-                android:id="@+id/site_lunch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"
-                android:padding="10dp"
-                android:text="Lauch site" />
-
-        </LinearLayout>-->
-
-
-
 </RelativeLayout>
 </androidx.cardview.widget.CardView>
