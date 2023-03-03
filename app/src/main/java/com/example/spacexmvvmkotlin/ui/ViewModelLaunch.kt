@@ -1,5 +1,6 @@
 package com.example.spacexmvvmkotlin.ui
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -25,7 +26,7 @@ class ViewModelLaunch @Inject constructor(private val repository: LaunchReposito
                     _launches.value = launches
                 } catch (e: Exception) {
                     // handle error
-
+                    Log.e("ViewModelLaunch", "Error fetching launches", e)
                 }
             }
         }

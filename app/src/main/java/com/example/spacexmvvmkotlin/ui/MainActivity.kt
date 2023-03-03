@@ -24,7 +24,14 @@ class MainActivity : AppCompatActivity() {
         setUpRecyclerView()
         setUpViewModel()
         refreshswipe()
+        floatingButtonUp()
 
+    }
+
+    private fun floatingButtonUp() {
+        binding.fab.setOnClickListener {
+            binding.recyclerSpace.scrollToPosition(0)
+        }
     }
 
     private fun setUpRecyclerView() {
